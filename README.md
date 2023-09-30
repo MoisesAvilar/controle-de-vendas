@@ -19,7 +19,6 @@ O Controle de Vendas é uma aplicação de software desenvolvida para auxiliar n
 ## Requisitos de Instalação:
 Para executar o projeto, é necessário ter o Python instalado no seu sistema. Você também deve instalar a biblioteca PySimpleGUI usando o pip:
 
-    ```bash
     pip install PySimpleGUI
 
 ## Como Usar:
