@@ -21,6 +21,7 @@ Para executar o projeto, é necessário ter o Python instalado no seu sistema. V
 
 '''bash
 pip install PySimpleGUI
+'''bash
 
 ## Como Usar:
 Execute o arquivo 'main_code.py' para iniciar a aplicação.
@@ -33,4 +34,4 @@ Ao clicar em "Registrar Vendas", é possível realizar transações de venda, se
 
 A aplicação manterá um histórico de vendas que pode ser visualizado a qualquer momento.
 
-Esperamos que o Gerenciador de Vendas - Versão 2.0 seja útil para o controle eficaz de vendas e estoque. Fique à vontade para contribuir, relatar problemas ou sugerir melhorias!
+Espero que o Controle de Vendas seja útil para o controle eficaz de vendas e estoque. Fique à vontade para contribuir, relatar problemas ou sugerir melhorias!
