@@ -30,26 +30,31 @@ def cadastrar_produto(nome, quantidade, categoria, descricao):
                       background_color='white',
                       text_color='black',
                       button_color=('black', 'white'))
+
         elif not quantidade:
             psg.popup('Insira quantidade',
                       background_color='white',
                       text_color='black',
                       button_color=('black', 'white'))
+
         elif not quantidade.isnumeric():
             psg.popup('Apenas números inteiros',
                       background_color='white',
                       text_color='black',
                       button_color=('black', 'white'))
+
         elif not categoria:
             psg.popup('Insira a categoria',
                       background_color='white',
                       text_color='black',
                       button_color=('black', 'white'))
+
         elif not descricao:
             psg.popup('Insira a descrição',
-                      background_color='white', 
+                      background_color='white',
                       text_color='black',
                       button_color=('black', 'white'))
+
         else:
             psg.popup('Produto Cadastrado',
                       background_color='white',
@@ -65,7 +70,7 @@ def load():
                     Quantidade INTEGER NOT NULL,
                     Categoria TEXT NOT NULL,
                     Descricao TEXT NOT NULL)''')
-    
+
     curso = con.cursor()
     curso.execute('PRAGMA table_info(Produtos);')
     lista = [titulo[1] for titulo in curso.fetchall()]

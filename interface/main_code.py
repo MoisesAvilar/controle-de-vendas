@@ -46,7 +46,7 @@ class Start:
                     Vendas()
                 else:
                     psg.popup('A tabela de produtos não existe. Por favor,'
-                              'cadastre produtos primeiro.',
+                              ' cadastre produtos primeiro.',
                               background_color='white',
                               text_color='black',
                               button_color=('black', 'white'))

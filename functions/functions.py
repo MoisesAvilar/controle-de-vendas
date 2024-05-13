@@ -25,7 +25,7 @@ def tabela_produtos(nome, descricao, quantidade, tamanho):
 
 def carregar_vendas(produto, detalhes, codigo, quantidade,
                     preco, vendedor, cliente, total, data):
-    
+
     con = sqlite3.connect('vendas.db')
     con.execute('''CREATE TABLE IF NOT EXISTS Vendas
                 (ID INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
@@ -39,7 +39,7 @@ def carregar_vendas(produto, detalhes, codigo, quantidade,
                 Total REAL NOT NULL,
                 Data TEXT NOT NULL)''')
     con.execute('''INSERT INTO Vendas 
-                (Produto, Descrição, Código, Quantidade, Preço, Vendedor, Cliente, Total, Data) 
+                (Produto, Descrição, Código, Quantidade, Preço, Vendedor, Cliente, Total, Data)
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)''',
                 (produto, detalhes, codigo, quantidade, preco, vendedor, cliente, total, data))
     con.commit()
